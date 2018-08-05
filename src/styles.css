@@ -44,3 +44,8 @@ svg path,
 svg rect{
   fill: black;
 }
+
+.jumbotron{
+  color: gray;
+  padding: 20px;
+}
