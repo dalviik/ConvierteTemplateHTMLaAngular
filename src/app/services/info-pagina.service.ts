@@ -13,7 +13,7 @@
 
     constructor( private http: HttpClient ) {
 
-      // this.cargarInfo();
+      this.cargarInfo();
       this.cargarEquipo();
 
     }
@@ -23,7 +23,7 @@
       this.http.get('assets/data/data-pagina.json')
       .subscribe( (resp: InfoPagina) => {
         this.cargada = true;
-        this. info = resp;
+        this.info = resp;
         // console.log(resp);
         // console.log(resp['email']);
 
@@ -35,7 +35,7 @@
       //  Cargar desde url Json
       this.http.get('https://angular-html-86dfb.firebaseio.com/equipo.json')
       .subscribe( (resp: any ) => {
-        this. equipo = resp;
+        this.equipo = resp;
         console.log(resp);
         // console.log(resp['email']);
 
